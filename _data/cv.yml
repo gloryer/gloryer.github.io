@@ -2,96 +2,143 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Adrian Shuai Li
     - name: Languages
-      value: English, German
+      value: Mandarin, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Computer Science
+      institution: Purdue University, West Lafayette, IN, USA
+      year: Expected 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - advised by Prof. Elisa Bertino.
+    - title: M.Sc. in Computer Science 
+      institution: University of Calgary, Calgary, AB, Canada
+      year: 2020
       description:
-        - Description 1.
-        - Description 2.
+        - advised by Prof. Rei Safavi-Naini.
+    - title: BSc. in Computer Science 
+      institution: Wuhan University, Wuhan, China
+      year: 2017
+      description:
+        
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern III
+      institution: Cisco Research, San Jose, CA, USA
+      year: May - Aug 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+     
+    - title: Ph.D. Intern
+      institution: Aviatrix Systems, Champaign, IL, USA
+      year: May - Aug 2022
       description:
-        - Description 1.
-        - Description 2.
+      
+    - title: Graduate Research Assistant
+      institution: Purdue University, West Lafayette, IN, USA
+      year: 2021 - now
+      description:
+        - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Security Research Intern
+      institution: TELUS Communications, Calgary, AB, Canada
+      year: Mar - Sep 2020  
       description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Graduate Research Assistant
+      institution: University of Calgary, Calgary, AB, Canada
+      year: 2017 - 2020
+      description:
+        - within Institute for Security, Privacy, and Information Assurance (ISPIA) led by Prof. Rei Safavi-Naini.
 
-- title: Open Source Projects
+    - title: VIsiting Undergraduate student
+      institution: University of Waterloo, Waterloo, ON, Canada
+      year: SUMMER 2016 
+      description:
+        - part of the Mitacs Globalink Research Internship program 
+
+- title: Awards and Acknowledgements
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
+    - year: 2024 
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Purdue University Recognition for Excellence in Research
+    - year: 2018
       items:
-        - Max Planck Medal
+        - Best Paper Award of ACM SIGCOMM 2018 Workshop on IoT Security and Privacy (IoT S&P) 
+    - year: 2017
+      items:
+        - Mitacs Globalink Graduate Fellowship 
+    - year: 2016
+      items:
+        - Wuhan University Academic Excellence Scholarship 
+        - Wuhan University Outstanding Undergraduate Student Award 
+      
 
-- title: Academic Interests
+- title: Services 
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: External reviewer for
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - <u>Journals:</u>  WIREs Data Mining and Knowledge Discovery
+        - <u>Conferences:</u> ICDE 2024, Globecom 2024, ESORICS 2024, ACSAC (2023, 2024), SACMAT (2022, 2024), CODASPY (2022, 2024), IRI 2022.
+    - title: Student volunteer for
       items:
-        - Description 1.
-        - Description 2.
+        - Selected Areas in Cryptography (SAC 2018)
 
-- title: Other Interests
-  type: list
+
+- title: Organization
+  type: nested_list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Conference
+      items:
+        - Local Arrangement Co-Chair for SecRETs2018 (Calgary, May 2018)
+    - title: Student Organization
+      items:
+        - Vice President for Computer Science Graduate Society, University of Calgary (2018-2019)
+
+
+- title: Invited talks
+  type: time_table
+  contents:
+    - title: "Domain Adaptation for Malware Classification Using Graph Neural Networks: Learning Semantic and Structural Features of Control Flow Graphs"
+      institution: Cisco open mic talks
+      year: 2023
+      
+
+- title: Teaching 
+  type: time_table
+  contents:
+    - title:  "CS 182: Foundations of Computer Science"
+      institution: Purdue University 
+      year: Spring 2021
+      description:
+        - teaching assistant
+    - title: "CPSC 525: Principles of Computer Security"
+      institution: University of Calgary
+      year: Winter 2019
+      description:
+        - teaching assistant
+    - title: "CPSC 530: Information Theory and Security"
+      institution: University of Calgary
+      year: Fall 2018
+      description:  
+        - teaching assistant
+    - title: "CPSC 329: Explorations in Information Security and Privacy"
+      institution: University of Calgary
+      year: Winter 2018
+      description:  
+        - teaching assistant
+    - title: "CPSC 203: Introduction to Problem Solving using Application Software"
+      institution: University of Calgary
+      year: Fall 2017
+      description:  
+        - teaching assistant
+
+
+
+

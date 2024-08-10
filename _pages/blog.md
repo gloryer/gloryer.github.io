@@ -16,6 +16,7 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
+
 <div class="post">
 
 {% assign blog_name_size = site.blog_name | size %}
@@ -56,9 +57,9 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
-{% if featured_posts.size > 0 %}
-<br>
+<!-- {% assign featured_posts = site.posts | where: "featured", "true" %}
+{% if featured_posts.size > 0 %} -->
+<!-- <br>
 
 <div class="container featured-posts">
 {% assign is_even = featured_posts.size | modulo: 2 %}
@@ -99,7 +100,7 @@ pagination:
     </div>
     <hr>
 
-{% endif %}
+{% endif %} -->
 
   <ul class="post-list">
 
@@ -141,7 +142,6 @@ pagination:
       </h3>
       <p>{{ post.description }}</p>
       <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
         {{ post.date | date: '%B %d, %Y' }}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Purdue University</a> 
+subtitle: <a href='https://www.purdue.edu/'>Purdue University</a> 
 
 profile:
   align: right
@@ -25,6 +25,6 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
-I am a computer science Ph.D. student at [Purdue University](https://www.cs.purdue.edu/) under the advisory of Prof. Elisa Bertino, focusing on cybersecurity and machine learning. My current research delves into general zero-shot learning and domain adaptation, collaborating with `IBM`. I'm also exploring GenAI methodologies for malware generation. I spent the summer 2023 at `Cisco Research`, where I applied graph neural networks to predict malware binaries using control flow graphs. Previously, during the summer of 2022, I worked at `Aviatrix`, employing machine learning techniques for traffic analysis.
+I am a computer science Ph.D. student at [Purdue University](https://www.cs.purdue.edu/) under the advisory of Prof. Elisa Bertino, focusing on cybersecurity and machine learning. My current research delves into general zero-shot learning and domain adaptation, collaborating with `IBM Research`. I'm also exploring GenAI methodologies for malware generation. I spent the summer 2023 at `Cisco Research`, where I applied graph neural networks to predict malware binaries using control flow graphs. Previously, during the summer of 2022, I worked at `Aviatrix`, employing machine learning techniques for traffic analysis.
 
 Prior to Purdue, I was a research assistant at UCalgary and Telus where I worked on designing distributed authorization systems that help domain experts explore and address complex authorization scenarios in DevOps and smart homes. I obtained my MSc degree in computer science from the University of Calgary under the advisory of Prof. Reihaneh Safavi-Naini.
