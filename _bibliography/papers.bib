@@ -3,21 +3,41 @@
 
 
 
-@article{li2024improving,
-  title={Improving Malware Detection with Adversarial Domain Adaptation and Control Flow Graphs},
+@article{li2025revisiting,
+  title={Revisiting Concept Drift in Windows Malware Detection: Adaptation to Real Drifted Malware with Minimal Samples},
   author={Li, Adrian Shuai and Iyengar, Arun and Kundu, Ashish and Bertino, Elisa},
-  journal={arXiv preprint arXiv:2407.13918},
-  year={2024},
+  journal={NDSS Symposium},
+  year={2025},
   selected={true},
-  abstract = {In the application of deep learning for malware classification, it is crucial to account for the prevalence of malware evolution, which can cause trained classifiers to fail on drifted malware. Existing solutions to combat concept drift use active learning: they select new samples for analysts to label, and then retrain the classifier with the new labels. Our key finding is, the current retraining techniques do not achieve optimal results. These models overlook that updating the model with scarce drifted samples requires learning features that remain consistent across pre-drift and post-drift data. Furthermore, the model should be capable of disregarding specific features that, while beneficial for classification of pre-drift data, are absent in post-drift data, thereby preventing prediction degradation.
-In this paper, we propose a method that learns retained information in malware control flow graphs post-drift by leveraging graph neural network with adversarial domain adaptation. Our approach considers drift-invariant features within assembly instructions and flow of code execution. We further propose building blocks for more robust evaluation of drift adaptation techniques that computes statistically distant malware clusters. Our approach is compared with the previously published training methods in active learning systems, and the other domain adaptation technique. Our approach demonstrates a significant enhancement in predicting unseen malware family in a binary classification task and predicting drifted malware families in a multi-class setting. In addition, we assess alternative malware representations. The best results are obtained when our adaptation method is applied to our graph representations.},
+  abstract = {In applying deep learning for malware classification, it is crucial to account for the prevalence of malware evolution, which can cause trained classifiers to fail on drifted malware. Existing solutions to address concept drift use active
+              learning. They select new samples for analysts to label and then
+              retrain the classifier with the new labels. Our key finding is that
+              the current retraining techniques do not achieve optimal results.
+              These techniques overlook that updating the model with scarce
+              drifted samples requires learning features that remain consistent
+              across pre-drift and post-drift data. The model should thus be
+              able of disregarding specific features that, while beneficial for
+              the classification of pre-drift data, are absent in post-drift data,
+              thereby preventing prediction degradation. In this paper, we
+              propose a new technique for detecting and classifying drifted
+              malware that learns drift-invariant features in malware control
+              flow graphs by leveraging graph neural networks with adversarial
+              domain adaptation. We compare it with existing model retraining
+              methods in active learning-based malware detection systems and
+              other domain adaptation techniques from the vision domain. Our
+              approach significantly improves drifted malware detection on
+              publicly available benchmarks and real-world malware databases
+              reported daily by security companies in 2024. We also tested
+              our approach in predicting multiple malware families drifted  
+              over time. A thorough evaluation shows that our approach
+              outperforms the state-of-the-art approaches.},
   html ={https://arxiv.org/abs/2407.13918},
   pdf ={https://arxiv.org/pdf/2407.13918},
-  bibtex_show = {@article{li2024improving,
-  title={Improving Malware Detection with Adversarial Domain Adaptation and Control Flow Graphs},
+  bibtex_show = {@article{li2025revisiting,
+  title={Revisiting Concept Drift in Windows Malware Detection: Adaptation to Real Drifted Malware with Minimal Samples},
   author={Li, Adrian Shuai and Iyengar, Arun and Kundu, Ashish and Bertino, Elisa},
-  journal={arXiv preprint arXiv:2407.13918},
-  year={2024}
+  journal={NDSS'25},
+  year={2025}
   }},
   preview={malware_arch.jpg}
 }
