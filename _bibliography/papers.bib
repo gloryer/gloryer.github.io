@@ -45,12 +45,7 @@
   abstract = {Many machine learning and data mining algorithms rely on the assumption that the training and testing data share the same feature space and distribution. However, this assumption may not always hold. For instance, there are situations where we need to classify data in one domain, but we only have sufficient training data available from a different domain. The latter data may follow a distinct distribution. In such cases, successfully transferring knowledge across domains can significantly improve learning performance and reduce the need for extensive data labeling efforts. Transfer learning (TL) has thus emerged as a promising framework to tackle this challenge, particularly in security-related tasks. This paper aims to review the current advancements in utilizing TL techniques for security. The paper includes a discussion of the existing research gaps in applying TL in the security domain, as well as exploring potential future research directions and issues that arise in the context of TL-assisted security solutions.},
   html ={https://arxiv.org/abs/2403.00935},
   pdf ={https://arxiv.org/pdf/2403.00935},
-  bibtex_show = {@article{li2024transfer,
-  title={Transfer Learning for Security: Challenges and Future Directions},
-  author={Li, Adrian Shuai and Iyengar, Arun and Kundu, Ashish and Bertino, Elisa},
-  journal={arXiv preprint arXiv:2403.00935},
-  year={2024}
-}},
+  bibtex_show = {true},
   preview={Mind_Map.jpg}}
 }
 
@@ -64,15 +59,7 @@
   publisher={Elsevier},
   abstract = {Many current malware detection methods are based on supervised learning techniques, which however have certain limitations. First, these techniques require a large amount of labeled data for training which is often difficult to obtain. Second, they are not very effective when there are differences in domain distribution between new malware and known malware. To address these issues, we propose MD-ADA – a malware detection framework that leverages adversarial domain adaptation (DA). DA allows one to adapt a training malware dataset available at a domain, referred to as the source, for training a classifier in another domain, referred to as the target. DA, typically used when the target has limited training malware data available, maps the source and target datasets into a common latent space. As we use an image representation for malware binaries, MD-ADA uses a convolution neural network (CNN) providing a lossless image embedding for the source and target datasets. MD-ADA also employs a generative adversarial network (GAN) for malware classification that is suitable for scenarios with few target-labeled data where the distribution of the features is similar (homogeneous) or different (heterogeneous). We have carried out several experiments to assess the performance of MD-ADA. The experiments show that MD-ADA outperforms the fine-tuning approach with an accuracy of 99.29% on the BODMAS dataset, 89.3% for the Malevis dataset on homogeneous feature distribution, and 90.12% on the CICMalMem2022 dataset (Target) and 83.23% on the Microsoft Kaggle dataset (Target) for heterogeneous feature distribution. The observed F1-scores of 99.13% and 87.5% for homogeneous feature distributions and 91.27% and 81.7% for heterogeneous distributions indicate that the MD-ADA performance is satisfactory for both data distributions when the target has very few labeled data.},
   html ={https://www.sciencedirect.com/science/article/pii/S0167404824000701},
-  bibtex_show = {@article{bhardwaj2024overcoming,
-  title={Overcoming the lack of labeled data: Training malware detection models using adversarial domain adaptation},
-  author={Bhardwaj, Sonam and Li, Adrian Shuai and Dave, Mayank and Bertino, Elisa},
-  journal={Computers \& Security},
-  volume={140},
-  pages={103769},
-  year={2024},
-  publisher={Elsevier}
-}},
+  bibtex_show = {true},
   preview={cs.jpg}
 }
 
@@ -89,14 +76,7 @@
   abstract = {Deep learning (DL) techniques are highly effective for defect detection from images. Training DL classification models, however, requires vast amounts of labeled data which is often expensive to collect. In many cases, not only the available training data is limited but may also imbalanced. In this paper, we propose a novel domain adaptation (DA) approach to address the problem of labeled training data scarcity for a target learning task by transferring knowledge gained from an existing source dataset used for a similar learning task. Our approach works for scenarios where the source dataset and the dataset available for the target learning task have same or different feature spaces. We combine our DA approach with an autoencoder-based data augmentation approach to address the problem of imbalanced target datasets. We evaluate our combined approach using image data for wafer defect prediction. The experiments show its superior performance against other algorithms when the number of labeled samples in the target dataset is significantly small and the target dataset is imbalanced.},
   html ={https://ieeexplore.ieee.org/abstract/document/10143099},
   pdf ={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10143099},
-  bibtex_show = {@inproceedings{li2023building,
-  title={Building Manufacturing Deep Learning Models with Minimal and Imbalanced Training Data Using Domain Adaptation and Data Augmentation},
-  author={Li, Adrian Shuai and Bertino, Elisa and Wu, Rih-Teng and Wu, Ting-Yan},
-  booktitle={2023 IEEE International Conference on Industrial Technology (ICIT)},
-  pages={1--8},
-  year={2023},
-  organization={IEEE}
-}},
+  bibtex_show = {true},
   preview={generative.jpg}
 }
 
@@ -110,12 +90,7 @@
 
 
 While many recent papers have proposed approaches for specific tasks, such as software security analysis and anomaly detection, these approaches differ in many aspects, such as with respect to the types of features in the model and the dataset used for training the models. In a way that no other available work does, this book provides readers with a comprehensive view of the complex area of ML for security, explains its challenges, and highlights areas for future research. This book is relevant to graduate students in computer science and engineering as well as information systems studies, and will also be useful to researchers and practitioners who work in the area of ML techniques for security tasks.},
-  bibtex_show = {@book{bertino2023machine,
-  title={Machine Learning Techniques for Cybersecurity},
-  author={Bertino, Elisa and Bhardwaj, Sonam and Cicala, Fabrizio and Gong, Sishuai and Karim, Imtiaz and Katsis, Charalampos and Lee, Hyunwoo and Li, Adrian Shuai and Mahgoub, Ashraf Y},
-  year={2023},
-  publisher={Springer}
-}},
+  bibtex_show = {true},
   preview={book.jpg}
 }
 
@@ -129,12 +104,7 @@ While many recent papers have proposed approaches for specific tasks, such as so
   abstract = {The most effective domain adaptation (DA) involves the decomposition of data representation into a domain independent representation (DIRep), and a domain dependent representation (DDRep). A classifier is trained by using the DIRep of the labeled source images. Since the DIRep is domain invariant, the classifier can be "transferred" to make predictions for the target domain with no (or few) labels. However, information useful for classification in the target domain can "hide" in the DDRep in current DA algorithms such as Domain-Separation-Networks (DSN). DSN's weak constraint to enforce orthogonality of DIRep and DDRep, allows this hiding and can result in poor performance. To address this shortcoming, we developed a new algorithm wherein a stronger constraint is imposed to minimize the DDRep by using a KL divergent loss for the DDRep in order to create the maximal DIRep that enhances transfer learning performance. By using synthetic data sets, we show explicitly that depending on initialization DSN with its weaker constraint can lead to sub-optimal solutions with poorer DA performance whereas our algorithm with maximal DIRep is robust against such perturbations. We demonstrate the equal-or-better performance of our approach against state-of-the-art algorithms by using several standard benchmark image datasets including Office. We further highlight the compatibility of our algorithm with pretrained models, extending its applicability and versatility in real-world scenarios.},
   html ={https://arxiv.org/abs/2306.00262},
   pdf ={https://arxiv.org/pdf/2306.00262},
-  bibtex_show = {@article{li2023maximal,
-  title={Maximal Domain Independent Representations Improve Transfer Learning},
-  author={Li, Adrian Shuai and Bertino, Elisa and Dang, Xuan-Hong and Singla, Ankush and Tu, Yuhai and Wegman, Mark N},
-  journal={arXiv preprint arXiv:2306.00262},
-  year={2023}
-}},
+  bibtex_show = {true},
   preview={Max.jpg}
 }
 
@@ -153,13 +123,7 @@ While many recent papers have proposed approaches for specific tasks, such as so
 A common requirement of such systems is that the user uses tokens of multiple servers in a particular order. A related requirement is the token may be used if certain environmental conditions hold. We introduce a secure capability-based system that supports "permission sequence" and "context". This allows a finite sequence of permissions to be enforced, each with their own specific context. We prove the safety property of this system for these conditions and integrate the system into OAuth 2.0 with proof-of-possession tokens. We evaluate our implementation and compare it with plain OAuth with respect to the average time for obtaining an authorization token and acquiring access to the resource.},
   html ={https://dl.acm.org/doi/abs/10.1145/3532105.3535014},
   pdf ={https://dl.acm.org/doi/pdf/10.1145/3532105.3535014},
-  bibtex_show = {@inproceedings{li2022capability,
-  title={A capability-based distributed authorization system to enforce context-aware permission sequences},
-  author={Li, Adrian Shuai and Safavi-Naini, Reihaneh and Fong, Philip WL},
-  booktitle={Proceedings of the 27th ACM on Symposium on Access Control Models and Technologies},
-  pages={195--206},
-  year={2022}
-}},
+  bibtex_show = {true},
   code ={https://github.com/gloryer/MERN_OAuthExtension},
   preview={example.jpg}
 }
@@ -175,14 +139,7 @@ A common requirement of such systems is that the user uses tokens of multiple se
   abstract = {Logging systems are an essential component of security systems and their security has been widely studied. Recently (2017) it was shown that existing secure logging protocols are vulnerable to crash attack in which the adversary modifies the log file and then crashes the system to make it indistinguishable from a normal system crash. The attacker was assumed to be non-adaptive and not be able to see the file content before modifying and crashing it (which will be immediately after modifying the file). The authors also proposed a system called SLiC that protects against this attacker. In this paper, we consider an (insider) adaptive adversary who can see the file content as new log operations are performed. This is a powerful adversary who can attempt to rewind the system to a past state. We formalize security against this adversary and introduce a scheme with provable security. We show that security against this attacker requires some (small) protected memory that can become accessible to the attacker after the system compromise. We show that existing secure logging schemes are insecure in this setting, even if the system provides some protected memory as above. We propose a novel mechanism that, in its basic form, uses a pair of keys that evolve at different rates, and employ this mechanism in an existing logging scheme that has forward integrity to obtain a system with provable security against adaptive (and hence non-adaptive) crash attack. We implemented our scheme on a desktop computer and a Raspberry Pi, and showed in addition to higher security, a significant efficiency gain over SLiC.},
   html ={https://link.springer.com/chapter/10.1007/978-3-030-45371-8_9},
   pdf = {https://arxiv.org/pdf/1910.14169},
-  bibtex_show = {@inproceedings{avizheh2020secure,
-  title={Secure logging with security against adaptive crash attack},
-  author={Avizheh, Sepideh and Safavi-Naini, Reihaneh and Li, Shuai},
-  booktitle={Foundations and Practice of Security: 12th International Symposium, FPS 2019, Toulouse, France, November 5--7, 2019, Revised Selected Papers 12},
-  pages={137--155},
-  year={2020},
-  organization={Springer}
-}},
+  bibtex_show = {true},
   preview={crash.png}
 }
 
@@ -200,12 +157,6 @@ A common requirement of such systems is that the user uses tokens of multiple se
   abstract = {Today's Smart Home platforms such as Samsung SmartThings and Amazon AWS IoT are primarily cloud based: devices in the home sense the environment and send the collected data, directly or through a hub, to the cloud. Cloud runs various applications and analytics on the collected data, and generates commands according to the users' specifications that are sent to the actuators to control the environment. The role of the hub in this setup is effectively message passing between the devices and the cloud, while the required analytics, computation, and control are all performed by the cloud. We ask the following question: what if the cloud is not available? This can happen not only by accident or natural causes, but also due to targeted attacks. We discuss possible effects of such unavailability on the functionalities that are commonly available in smart homes, including security and safety related services as well as support for health and well-being of home users, and propose RES-Hub, a hub that can provide the required functionalities when the cloud is unavailable. During the normal functioning of the system, RES-Hub will receive regular status updates from cloud, and will use this information to continue to provide the user specified services when it detects the cloud is down. We describe an IoTivity-based software architecture that is used to implement RES-Hub in a flexible and expendable way and discuss our implementation.},
   html ={https://dl.acm.org/doi/abs/10.1145/3229565.3229570},
   pdf ={https://dl.acm.org/doi/pdf/10.1145/3229565.3229570},
-  bibtex_show = {@inproceedings{doan2018towards,
-  title={Towards a resilient smart home},
-  author={Doan, Tam Thanh and Safavi-Naini, Reihaneh and Li, Shuai and Avizheh, Sepideh and K, Muni Venkateswarlu and Fong, Philip WL},
-  booktitle={Proceedings of the 2018 workshop on IoT security and privacy},
-  pages={15--21},
-  year={2018}
-}},
+  bibtex_show = {true},
   preview={reshub.png}
 }
