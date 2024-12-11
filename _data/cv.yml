@@ -11,7 +11,7 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Purdue University, West Lafayette, IN, USA
-      year: Expected 2025
+      year: Expected 2026
       description:
         - advised by Prof. Elisa Bertino.
     - title: M.Sc. in Computer Science 
@@ -37,10 +37,16 @@
       institution: Aviatrix Systems, Champaign, IL, USA
       year: May - Aug 2022
       description:
+    
+    - title: Collaborative Researcher
+      institution: IBM Research, Yorktown Heights, NY, USA
+      year: 2021 - present
+      description:
+        -  collaborated with Dr. Mark Wegman and Dr. Yuhai Tu 
       
     - title: Graduate Research Assistant
       institution: Purdue University, West Lafayette, IN, USA
-      year: 2021 - now
+      year: 2021 - present
       description:
         - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino.
 
