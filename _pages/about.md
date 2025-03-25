@@ -26,6 +26,9 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 
 
-I am a Computer Science Ph.D. student at `Purdue University`, advised by Prof. Elisa Bertino. My current research focuses on transfer learning and domain adaptation for security, particularly in defending against evolving cyber threats. I am exploring Large Language Models (LLMs) and their potential misuse in malware generation. My previous internships at `Cisco Research` and `Aviatrix` involved developing machine learning-based malware and malicious network traffic detectors. My prior research experience includes developing secure distributed authorization systems for smart homes.
+I am a Computer Science Ph.D. student at `Purdue University`, advised by Prof. Elisa Bertino. My research focuses on transfer learning and domain adaptation for cybersecurity, developing defenses against evolving threats. I also investigate security risks of LLMs, particularly their misuse in malware generation. Previously, I interned at `Cisco Research` and `Aviatrix`, building ML systems for malware and network threat detection. My earlier work included designing secure authorization systems for smart homes.
 
-I obtained my MSc in Computer Science from the `University of Calgary`, Canada, supervised by Prof. Reihaneh Safavi-Naini, and my Bachelor's degree from `Wuhan University`, China.
+
+I obtained my MSc. in Computer Science from the `University of Calgary`, Canada, supervised by Prof. Reihaneh Safavi-Naini, and my Bachelor's degree from `Wuhan University`, China.
+
+
