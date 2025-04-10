@@ -26,7 +26,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 
 
-I am a Computer Science Ph.D. student at `Purdue University`, advised by Prof. Elisa Bertino. My research focuses on transfer learning and domain adaptation for security, developing defenses against evolving threats. I also investigate security risks of LLMs, particularly their misuse in malware generation. Previously, I interned at `Cisco Research` and `Aviatrix`, building ML systems for malware and network threat detection. My earlier work included designing secure authorization systems for smart homes.
+I am a Computer Science Ph.D. candidate at `Purdue University`, advised by Prof. Elisa Bertino. My research focuses on transfer learning and domain adaptation for security, developing defenses against evolving threats. I also investigate security risks of LLMs, particularly their misuse in malware generation. Previously, I interned at `Cisco Research` and `Aviatrix`, building ML systems for malware and network threat detection. My earlier work included designing secure authorization systems for smart homes.
 
 
 I obtained my MSc. in Computer Science from the `University of Calgary`, Canada, supervised by Prof. Reihaneh Safavi-Naini, and my Bachelor's degree from `Wuhan University`, China.
