@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I've passed my preliminary exam and am now a Ph.D. candidate!
+I've passed my preliminary exam and am now a Ph.D. candidate! Thank you to my advisor, committee, and collaborators for their support.
