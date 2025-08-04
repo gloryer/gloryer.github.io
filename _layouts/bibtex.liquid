@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+{%- assign entry = site.bibliography | where: "key", page.key | first -%}
+
+{% capture head_extra %}
+  {% if entry %}
+    <meta name="citation_title" content="{{ entry.title }}">
+    {% for author in entry.author_array %}
+      <meta name="citation_author" content="{{ author.last }}, {{ author.first }}">
+    {% endfor %}
+    <meta name="citation_conference_title" content="{{ entry.booktitle }}">
+    <meta name="citation_publication_date" content="{{ entry.year }}-01-01">
+    <meta name="citation_pdf_url" content="{{ entry.pdf }}">
+  {% endif %}
+{% endcapture %}
+
+{% assign page.head_extra = head_extra %}
+
+<article class="page">
+  <header class="pub-header">
+    <h1 class="pub-title">{{ entry.title }}</h1>
+    <p class="pub-authors">{{ entry.author }}</p>
+    <p class="pub-venue"><strong>{{ entry.booktitle }}</strong>, {{ entry.year }}</p>
+  </header>
+
+  <section class="pub-links">
+    {% if entry.pdf %}
+      <a href="{{ entry.pdf }}" target="_blank">[PDF]</a>
+    {% endif %}
+    {% if entry.html %}
+      <a href="{{ entry.html }}" target="_blank">[Project Page]</a>
+    {% endif %}
+    {% if entry.code %}
+      <a href="{{ entry.code }}" target="_blank">[Code]</a>
+    {% endif %}
+    {% if entry.video %}
+      <a href="{{ entry.video }}" target="_blank">[Video]</a>
+    {% endif %}
+    {% if entry.slides %}
+      <a href="{{ entry.slides }}" target="_blank">[Slides]</a>
+    {% endif %}
+  </section>
+
+  {% if entry.abstract %}
+    <section class="pub-abstract">
+      <h3>Abstract</h3>
+      <p>{{ entry.abstract }}</p>
+    </section>
+  {% endif %}
+
+  <section class="pub-bibtex">
+    <h3>BibTeX</h3>
+    <pre><code>@{{ entry.type }}{{ entry.key }},<br>
+{% for field in entry.fields %}
+  {{ field[0] }} = { {{ field[1] }} },
+{% endfor %}
+}</code></pre>
+  </section>
+</article>
