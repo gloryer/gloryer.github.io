@@ -15,7 +15,7 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography --details-link %}
+{% bibliography%}
 
 
 </div>
