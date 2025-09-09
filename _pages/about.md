@@ -31,6 +31,6 @@ I am a Computer Science Ph.D. candidate at `Purdue University`, advised by Prof.
 
 I obtained my MSc. in Computer Science from the `University of Calgary`, Canada, supervised by Prof. Reihaneh Safavi-Naini, and my Bachelor's degree from `Wuhan University`, China.
 
-**I’m on the job market for industry Research Scientist or Applied Scientist roles in Security and AI, while also open to broader AI opportunities.**
+**I’m on the job market and looking for industry Research Scientist or Applied Scientist roles in Security and AI.**
 
 
