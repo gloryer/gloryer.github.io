@@ -32,19 +32,19 @@
       institution: Cisco Research, San Jose, CA, USA
       year: May - Aug 2023
       description:
-        - hosted by Ashish Kundu and Arun Iyengar 
+        #- hosted by Ashish Kundu and Arun Iyengar 
      
     - title: Ph.D. Intern
       institution: Aviatrix Systems, Champaign, IL, USA
       year: May - Aug 2022
       description:
-        - hosted by Susan Hinrichs and Joshua Juen
+        #- hosted by Susan Hinrichs and Joshua Juen
     
     - title: Collaborative Researcher
       institution: IBM Research, Yorktown Heights, NY, USA
       year: 2021 - present
       description:
-        - collaborated with Mark Wegman and Yuhai Tu 
+        #- collaborated with Mark Wegman and Yuhai Tu 
       
     - title: Graduate Research Assistant
       institution: Purdue University, West Lafayette, IN, USA
@@ -75,6 +75,8 @@
     - year: 2025
       items:
         - Internet Society NDSS Fellowship
+        - Best Paper Award of IEEE CIC 
+        - Best Paper Award of IEEE TPS
     - year: 2024 
       items:
         - Purdue University Recognition for Excellence in Research
