@@ -97,8 +97,8 @@
   contents:
     - title: Reviewer for 
       items: 
-        - <u>Journals:</u>  WIREs Data Mining and Knowledge Discovery
-        - <u>Conferences:</u> IJCNN 2025, ACSAC 2024
+        - <u>Journals:</u>  WIREs Data Mining and Knowledge Discovery, Digital Threats: Research and Practice
+        - <u>Conferences:</u> IJCNN 2025, ACSAC 2024, ICDE 2024
 
     - title: External reviewer for
       items:
@@ -132,7 +132,12 @@
   contents:
     - title:  "CS 182: Foundations of Computer Science"
       institution: Purdue University 
-      year: Spring 2021
+      year: Spring 2021, Spring 2026
+      description:
+        - teaching assistant
+    - title:  "CS 242: Introduction to Data Science"
+      institution: Purdue University 
+      year: Fall 2025
       description:
         - teaching assistant
     - title: "CPSC 525: Principles of Computer Security"
