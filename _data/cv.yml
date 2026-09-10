@@ -3,7 +3,7 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Purdue University, West Lafayette, IN, USA
-      logo: purdue2.jpg
+      logo: purdue_university_logo.jpeg
       year: 2026
       description:
         - advised by Prof. Elisa Bertino
@@ -46,7 +46,7 @@
 
     - title: Graduate Research Assistant
       institution: Purdue University, West Lafayette, IN, USA
-      logo: purdue2.jpg
+      logo: purdue_university_logo.jpeg
       year: 2021 - present
       description:
         - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino
@@ -66,7 +66,7 @@
 
     - title: VIsiting Undergraduate Student
       institution: University of Waterloo, Waterloo, ON, Canada
-      logo: waterloo2.png
+      logo: uwaterloo_logo.jpeg
       year: SUMMER 2016
       description:
         - part of the Mitacs Globalink Research Internship program
