@@ -30,6 +30,20 @@
       description:
         - Internet security research team
 
+    - title: Graduate Research Assistant
+      institution: Purdue University, West Lafayette, IN, USA
+      logo: purdue_university_logo.jpeg
+      year: 2021 - 2026
+      description:
+        - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino
+
+    - title: Collaborative Researcher
+      institution: IBM Research, Yorktown Heights, NY, USA
+      logo: ibm.svg
+      year: 2021 - 2025
+      description:
+        #- collaborated with Mark Wegman and Yuhai Tu
+
     - title: Research Intern III
       institution: Cisco Research, San Jose, CA, USA
       logo: cisco.svg
@@ -43,20 +57,6 @@
       year: May - Aug 2022
       description:
         #- hosted by Susan Hinrichs and Joshua Juen
-
-    - title: Collaborative Researcher
-      institution: IBM Research, Yorktown Heights, NY, USA
-      logo: ibm.svg
-      year: 2021 - present
-      description:
-        #- collaborated with Mark Wegman and Yuhai Tu
-
-    - title: Graduate Research Assistant
-      institution: Purdue University, West Lafayette, IN, USA
-      logo: purdue_university_logo.jpeg
-      year: 2021 - present
-      description:
-        - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino
 
     - title: Security Research Intern
       institution: TELUS Communications, Calgary, AB, Canada
