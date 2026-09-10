@@ -90,6 +90,81 @@ div.container-links {
 }
 
 /*****************************
+ * CV EXPERIENCE_TABLE styles
+ * (Education / Research Experience: big logo on the left,
+ * institution/location, then position/time, then details)
+ *****************************/
+
+li.cv-entry {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+div.cv-entry-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.5rem;
+}
+
+img.institution-logo-lg {
+  width: 100%;
+  max-height: 5rem;
+  height: auto;
+  object-fit: contain;
+  background-color: #fff;
+  border-radius: 0.35rem;
+  padding: 0.4rem 0.6rem;
+}
+
+i.iconinstitution-lg {
+  color: var(--global-theme-color);
+  font-size: 3rem;
+}
+
+div.cv-entry-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+div.cv-entry-institution {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+div.cv-entry-subheader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  color: var(--global-text-color-light);
+}
+
+span.cv-entry-title {
+  font-style: italic;
+}
+
+span.cv-entry-year {
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+div.cv-entry-department {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  margin-top: 0.2rem;
+}
+
+div.cv-entry-description {
+  margin-top: 0.5rem;
+}
+
+/*****************************
  * CV MAP styles
  *****************************/
 

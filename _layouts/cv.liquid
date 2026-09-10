@@ -36,6 +36,8 @@ layout: default
                 {% include cv/nested_list.liquid %}
               {% elsif entry.type == 'time_table' %}
                 {% include cv/time_table.liquid %}
+              {% elsif entry.type == 'experience_table' %}
+                {% include cv/experience_table.liquid %}
               {% elsif entry.type == 'list_groups' %}
                 {% include cv/list_groups.liquid %}
               {% else %}

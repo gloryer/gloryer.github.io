@@ -1,13 +1,5 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Adrian Shuai Li
-    - name: Languages
-      value: Mandarin, English
-
 - title: Education
-  type: time_table
+  type: experience_table
   contents:
     - title: Ph.D. in Computer Science
       institution: Purdue University, West Lafayette, IN, USA
@@ -29,7 +21,7 @@
 
 
 - title: Research Experience
-  type: time_table
+  type: experience_table
   contents:
     - title: Research Intern III
       institution: Cisco Research, San Jose, CA, USA
