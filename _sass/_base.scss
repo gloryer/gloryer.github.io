@@ -506,7 +506,7 @@ footer.sticky-bottom {
 // News
 
 .news {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 2px solid var(--global-text-color-light);
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
 
@@ -521,7 +521,7 @@ footer.sticky-bottom {
 // Selected publications (about page)
 
 .selected-publications {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 2px solid var(--global-text-color-light);
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
 }
