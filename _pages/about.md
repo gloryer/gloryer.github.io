@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.paloaltonetworks.com/'>Palo Alto Networks</a> 
+subtitle: <a href='https://www.paloaltonetworks.com/'><img src="/assets/img/institution_logos/palo_alto_networks_logo.jpeg" alt="Palo Alto Networks logo" style="height:18px; vertical-align:middle; border-radius:3px; margin-right:6px;">Palo Alto Networks</a> 
 
 profile:
   align: right
