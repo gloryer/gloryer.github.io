@@ -16,7 +16,7 @@
           <div class="cv-entry-institution">{{ content.institution }}</div>
         {% endif %}
         {% if content.title or content.year %}
-          <div class="cv-entry-subheader">
+          <div class="cv-entry-subheader{% unless content.title %} cv-entry-subheader-year-only{% endunless %}">
             {% if content.title %}<span class="cv-entry-title">{{ content.title }}</span>{% endif %}
             {% if content.year %}<span class="cv-entry-year">{{ content.year }}</span>{% endif %}
           </div>

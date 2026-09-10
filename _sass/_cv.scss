@@ -143,6 +143,12 @@ div.cv-entry-subheader {
   color: var(--global-text-color-light);
 }
 
+// When there's no title next to it (e.g. Awards), push the time down a row
+// so it doesn't float right at the top of the entry.
+div.cv-entry-subheader-year-only {
+  margin-top: 1.5rem;
+}
+
 span.cv-entry-title {
   font-style: italic;
   flex: 1 1 auto;
