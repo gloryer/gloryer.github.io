@@ -114,18 +114,15 @@
     - title: Student volunteer for
       items:
         - Selected Areas in Cryptography (SAC 2018)
+    - title: Co-chair for Conference
+      items:
+        - Local Arrangement Co-Chair for SecRETs2018 (Calgary, May 2018)
 
 
 - title: Organization
   type: experience_table
   contents:
-    - title: Local Arrangement Co-Chair for SecRETs2018, Calgary
-      department: Conference
-      year: May 2018
-      description:
-
-    - title: Vice President, Computer Science Graduate Society, University of Calgary
-      department: Student Organization
+    - title: Vice President for Computer Science Graduate Society, University of Calgary
       year: 2018 - 2019
       description:
 
