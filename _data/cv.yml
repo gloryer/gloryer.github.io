@@ -11,7 +11,7 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Purdue University, West Lafayette, IN, USA
-      year: Expected 2026
+      year: 2026
       description:
         - advised by Prof. Elisa Bertino
     - title: M.Sc. in Computer Science 
@@ -126,41 +126,4 @@
       institution: Cisco open mic talks
       year: 2023
       
-
-- title: Teaching 
-  type: time_table
-  contents:
-    - title:  "CS 182: Foundations of Computer Science"
-      institution: Purdue University 
-      year: Sp'21, Sp'26
-      description:
-        - teaching assistant
-    - title:  "CS 242: Introduction to Data Science"
-      institution: Purdue University 
-      year: Fall 2025
-      description:
-        - teaching assistant
-    - title: "CPSC 525: Principles of Computer Security"
-      institution: University of Calgary
-      year: Winter 2019
-      description:
-        - teaching assistant
-    - title: "CPSC 530: Information Theory and Security"
-      institution: University of Calgary
-      year: Fall 2018
-      description:  
-        - teaching assistant
-    - title: "CPSC 329: Explorations in Information Security and Privacy"
-      institution: University of Calgary
-      year: Winter 2018
-      description:  
-        - teaching assistant
-    - title: "CPSC 203: Introduction to Problem Solving using Application Software"
-      institution: University of Calgary
-      year: Fall 2017
-      description:  
-        - teaching assistant
-
-
-
 
