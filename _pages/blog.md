@@ -39,13 +39,13 @@ pagination:
       {% for tag in site.display_tags %}
         {% assign color_index = forloop.index0 | modulo: 7 %}
         <button type="button" class="filter-pill color-{{ color_index }}" data-filter="tag-{{ tag | slugify }}">
-          <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+          {{ tag }}
         </button>
       {% endfor %}
       {% for category in site.display_categories %}
         {% assign color_index = site.display_tags.size | plus: forloop.index0 | modulo: 7 %}
         <button type="button" class="filter-pill color-{{ color_index }}" data-filter="category-{{ category | slugify }}">
-          <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+          {{ category }}
         </button>
       {% endfor %}
     </div>
@@ -159,8 +159,7 @@ pagination:
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
-            <button type="button" class="filter-btn" data-filter="tag-{{ tag | slugify }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</button>
+            <button type="button" class="filter-btn" data-filter="tag-{{ tag | slugify }}">{{ tag }}</button>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -170,8 +169,7 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            <button type="button" class="filter-btn" data-filter="category-{{ category | slugify }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</button>
+            <button type="button" class="filter-btn" data-filter="category-{{ category | slugify }}">{{ category }}</button>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}

@@ -518,6 +518,14 @@ footer.sticky-bottom {
   }
 }
 
+// Selected publications (about page)
+
+.selected-publications {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
 // Repositories
 
 @media (min-width: 768px) {

@@ -27,7 +27,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 Hi there! I am a researcher 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗮𝘁 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝘀𝗲𝗰𝘁𝗶𝗼𝗻 𝗼𝗳 𝗔𝗜/𝗠𝗟 𝗮𝗻𝗱 𝗰𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆. 𝗜 𝗯𝘂𝗶𝗹𝗱 𝗮𝗻𝗱 𝗮𝗽𝗽𝗹𝘆 𝗔𝗜 𝘁𝗼 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝗻𝗲𝘁 𝘀𝗮𝗳𝗲𝗿. My past and ongoing research interests span concept drift and domain adaptation in ML-based malware detection, adversarial robustness, and the security risks of LLMs.
 
-I am currently a Sr. Staff Security Researcher at `Palo Alto Networks` on the Internet security research team. My earlier industry experience includes building ML systems for malware detection at `Cisco Research` and network threat detection at `Aviatrix`.
+I am currently a Sr. Staff Security Researcher at `Palo Alto Networks` on the Internet security research team, where I work on [Advanced IP Defense](https://www.paloaltonetworks.com/network-security/advanced-ip-defense). My earlier industry experience includes building ML systems for malware detection at `Cisco Research` and network threat detection at `Aviatrix`.
 
 Before joining Palo Alto Networks, I pursued my Ph.D. in the Department of Computer Science at `Purdue University`, advised by Prof. Elisa Bertino. My doctoral research addressed the challenge of concept drift in ML-based malware detection, developing domain adaptation methods, from semi-supervised to fully unsupervised, that maintain classifier accuracy as malware evolves, along with defenses that harden these adaptive detectors against adversarial evasion. I also investigated 𝗨𝘀𝗶𝗻𝗴 𝗟𝗟𝗠𝘀 𝘁𝗼 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗲 𝗺𝗮𝗹𝘄𝗮𝗿𝗲, probing how generative AI lowers the bar for attackers.
 
