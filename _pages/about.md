@@ -25,7 +25,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
-Hi there! I am a researcher 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗮𝘁 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝘀𝗲𝗰𝘁𝗶𝗼𝗻 𝗼𝗳 𝗔𝗜/𝗠𝗟 𝗮𝗻𝗱 𝗰𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆. 𝗜 𝗯𝘂𝗶𝗹𝗱 𝗮𝗻𝗱 𝗮𝗽𝗽𝗹𝘆 𝗔𝗜 𝘁𝗼 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝗻𝗲𝘁 𝘀𝗮𝗳𝗲𝗿. My past and ongoing research interests span concept drift and domain adaptation in ML-based malware detection, adversarial robustness, and the security risks of LLMs.
+Hi there! I am a researcher **working at the intersection of AI/ML and cybersecurity. I build and apply AI to make the internet safer.** My past and ongoing research interests span concept drift and domain adaptation in ML-based malware detection, adversarial robustness, and the security risks of LLMs.
 
 I am currently a Sr. Staff Security Researcher at `Palo Alto Networks` on the Internet security research team, where I work on Advanced IP Defense. My earlier industry experience includes building ML systems for malware detection at `Cisco Research` and network threat detection at `Aviatrix`.
 
