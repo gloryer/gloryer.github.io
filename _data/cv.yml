@@ -1,25 +1,3 @@
-- title: Education
-  type: experience_table
-  contents:
-    - title: Ph.D. in Computer Science
-      institution: Purdue University, West Lafayette, IN, USA
-      logo: purdue_university_logo.jpeg
-      year: 2026
-      description:
-        - advised by Prof. Elisa Bertino
-    - title: M.Sc. in Computer Science
-      institution: University of Calgary, Calgary, AB, Canada
-      logo: calgary.svg
-      year: 2020
-      description:
-        - advised by Prof. Rei Safavi-Naini
-    - title: BSc. in Computer Science
-      institution: Wuhan University, Wuhan, China
-      logo: wuhan2.png
-      year: 2017
-      description:
-
-
 - title: Research Experience
   type: experience_table
   contents:
@@ -77,34 +55,56 @@
       description:
         - part of the Mitacs Globalink Research Internship program
 
+- title: Education
+  type: experience_table
+  contents:
+    - title: Ph.D. in Computer Science
+      institution: Purdue University, West Lafayette, IN, USA
+      logo: purdue_university_logo.jpeg
+      year: 2026
+      description:
+        - advised by Prof. Elisa Bertino
+    - title: M.Sc. in Computer Science
+      institution: University of Calgary, Calgary, AB, Canada
+      logo: calgary.svg
+      year: 2020
+      description:
+        - advised by Prof. Rei Safavi-Naini
+    - title: BSc. in Computer Science
+      institution: Wuhan University, Wuhan, China
+      logo: wuhan2.png
+      year: 2017
+      description:
+
+
 - title: Awards and Acknowledgements
   type: experience_table
   contents:
     - year: 2025
       items:
         - Internet Society NDSS Fellowship
-        - Best Paper Award of IEEE CIC 
+        - Best Paper Award of IEEE CIC
         - Best Paper Award of IEEE TPS
-    - year: 2024 
+    - year: 2024
       items:
         - Purdue University Recognition for Excellence in Research
     - year: 2018
       items:
-        - Best Paper Award of ACM SIGCOMM 2018 Workshop on IoT Security and Privacy (IoT S&P) 
+        - Best Paper Award of ACM SIGCOMM 2018 Workshop on IoT Security and Privacy (IoT S&P)
     - year: 2017
       items:
-        - Mitacs Globalink Graduate Fellowship 
+        - Mitacs Globalink Graduate Fellowship
     - year: 2016
       items:
-        - Wuhan University Academic Excellence Scholarship 
-        - Wuhan University Outstanding Undergraduate Student Award 
-      
+        - Wuhan University Academic Excellence Scholarship
+        - Wuhan University Outstanding Undergraduate Student Award
 
-- title: Services 
+
+- title: Services
   type: nested_list
   contents:
-    - title: Reviewer for 
-      items: 
+    - title: Reviewer for
+      items:
         - <u>Journals:</u>  WIREs Data Mining and Knowledge Discovery, Digital Threats Research and Practice
         - <u>Conferences:</u> IJCNN 2025, ACSAC 2024, ICDE 2024
 
@@ -130,9 +130,9 @@
 - title: Invited talks
   type: experience_table
   contents:
-    - title: "Domain Adaptation for Malware Classification Using Graph Neural Networks: Learning Semantic and Structural Features of Control Flow Graphs"
+    - title: "Domain Adaptation for Malware Classification Using Graph<br>Neural Networks: Learning Semantic and Structural Features of<br>Control Flow Graphs"
       institution: Cisco open mic talks
       logo: cisco.svg
       year: 2023
-      
+
 
