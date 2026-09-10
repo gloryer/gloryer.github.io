@@ -3,7 +3,7 @@ layout: default
 permalink: /blog/
 title: blog
 nav: true
-nav_order: 1
+nav_order: 6
 pagination:
   enabled: false # disabled so the topic filter below can filter across every post on one page
   collection: posts
