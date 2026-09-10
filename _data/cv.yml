@@ -23,6 +23,13 @@
 - title: Research Experience
   type: experience_table
   contents:
+    - title: Sr. Staff Security Researcher
+      institution: Palo Alto Networks, Santa Clara, CA, USA
+      logo: palo_alto_networks_logo.jpeg
+      year: May 2026 - present
+      description:
+        - Internet security research team
+
     - title: Research Intern III
       institution: Cisco Research, San Jose, CA, USA
       logo: cisco.svg
@@ -53,7 +60,7 @@
 
     - title: Security Research Intern
       institution: TELUS Communications, Calgary, AB, Canada
-      logo: telus.svg
+      logo: telus_logo.jpeg
       year: Mar - Sep 2020
       description:
 
