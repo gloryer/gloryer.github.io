@@ -23,6 +23,7 @@
         - advised by Prof. Rei Safavi-Naini
     - title: BSc. in Computer Science
       institution: Wuhan University, Wuhan, China
+      logo: wuhan.png
       year: 2017
       description:
 
@@ -39,6 +40,7 @@
 
     - title: Ph.D. Intern
       institution: Aviatrix Systems, Champaign, IL, USA
+      logo: aviatrix.svg
       year: May - Aug 2022
       description:
         #- hosted by Susan Hinrichs and Joshua Juen
