@@ -506,7 +506,7 @@ footer.sticky-bottom {
 // Section headings on the about page (news, latest posts, selected publications):
 // the divider sits right under the heading, not at the bottom of the section.
 .section-title {
-  border-bottom: 1px solid var(--global-text-color-light);
+  border-bottom: 1px solid rgba(130, 130, 130, 0.4);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
