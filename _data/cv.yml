@@ -11,7 +11,7 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Purdue University, West Lafayette, IN, USA
-      logo: purdue.svg
+      logo: purdue2.jpg
       year: 2026
       description:
         - advised by Prof. Elisa Bertino
@@ -23,7 +23,7 @@
         - advised by Prof. Rei Safavi-Naini
     - title: BSc. in Computer Science
       institution: Wuhan University, Wuhan, China
-      logo: wuhan.png
+      logo: wuhan2.png
       year: 2017
       description:
 
@@ -54,7 +54,7 @@
 
     - title: Graduate Research Assistant
       institution: Purdue University, West Lafayette, IN, USA
-      logo: purdue.svg
+      logo: purdue2.jpg
       year: 2021 - present
       description:
         - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino
@@ -74,7 +74,7 @@
 
     - title: VIsiting Undergraduate Student
       institution: University of Waterloo, Waterloo, ON, Canada
-      logo: waterloo.svg
+      logo: waterloo2.png
       year: SUMMER 2016
       description:
         - part of the Mitacs Globalink Research Internship program
