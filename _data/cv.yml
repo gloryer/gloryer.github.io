@@ -11,63 +11,71 @@
   contents:
     - title: Ph.D. in Computer Science
       institution: Purdue University, West Lafayette, IN, USA
+      logo: purdue.svg
       year: 2026
       description:
         - advised by Prof. Elisa Bertino
-    - title: M.Sc. in Computer Science 
+    - title: M.Sc. in Computer Science
       institution: University of Calgary, Calgary, AB, Canada
+      logo: calgary.svg
       year: 2020
       description:
         - advised by Prof. Rei Safavi-Naini
-    - title: BSc. in Computer Science 
+    - title: BSc. in Computer Science
       institution: Wuhan University, Wuhan, China
       year: 2017
       description:
-        
+
 
 - title: Research Experience
   type: time_table
   contents:
     - title: Research Intern III
       institution: Cisco Research, San Jose, CA, USA
+      logo: cisco.svg
       year: May - Aug 2023
       description:
-        #- hosted by Ashish Kundu and Arun Iyengar 
-     
+        #- hosted by Ashish Kundu and Arun Iyengar
+
     - title: Ph.D. Intern
       institution: Aviatrix Systems, Champaign, IL, USA
       year: May - Aug 2022
       description:
         #- hosted by Susan Hinrichs and Joshua Juen
-    
+
     - title: Collaborative Researcher
       institution: IBM Research, Yorktown Heights, NY, USA
+      logo: ibm.svg
       year: 2021 - present
       description:
-        #- collaborated with Mark Wegman and Yuhai Tu 
-      
+        #- collaborated with Mark Wegman and Yuhai Tu
+
     - title: Graduate Research Assistant
       institution: Purdue University, West Lafayette, IN, USA
+      logo: purdue.svg
       year: 2021 - present
       description:
         - within the Cyber Space Security Lab (Cyber2Slab) led by Prof. Elisa Bertino
 
     - title: Security Research Intern
       institution: TELUS Communications, Calgary, AB, Canada
-      year: Mar - Sep 2020  
+      logo: telus.svg
+      year: Mar - Sep 2020
       description:
 
     - title: Graduate Research Assistant
       institution: University of Calgary, Calgary, AB, Canada
+      logo: calgary.svg
       year: 2017 - 2020
       description:
         - within Institute for Security, Privacy, and Information Assurance (ISPIA) led by Prof. Rei Safavi-Naini
 
     - title: VIsiting Undergraduate Student
       institution: University of Waterloo, Waterloo, ON, Canada
-      year: SUMMER 2016 
+      logo: waterloo.svg
+      year: SUMMER 2016
       description:
-        - part of the Mitacs Globalink Research Internship program 
+        - part of the Mitacs Globalink Research Internship program
 
 - title: Awards and Acknowledgements
   type: time_table
