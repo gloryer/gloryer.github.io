@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.purdue.edu/'>Purdue University</a> 
+subtitle: <a href='https://www.paloaltonetworks.com/'>Palo Alto Networks</a> 
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>CS PhD Student</p>
-    <p>Purdue University</p>
-    <p>West Lafayette, US</p>
+    <p>Sr. Staff Security Researcher</p>
+    <p>Palo Alto Networks</p>
+    <p>Santa Clara, CA</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -25,12 +25,15 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
+Hi there! I am a researcher 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗮𝘁 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝘀𝗲𝗰𝘁𝗶𝗼𝗻 𝗼𝗳 𝗔𝗜/𝗠𝗟 𝗮𝗻𝗱 𝗰𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆. 𝗜 𝗯𝘂𝗶𝗹𝗱 𝗮𝗻𝗱 𝗮𝗽𝗽𝗹𝘆 𝗔𝗜 𝘁𝗼 𝗺𝗮𝗸𝗲 𝘁𝗵𝗲 𝗶𝗻𝘁𝗲𝗿𝗻𝗲𝘁 𝘀𝗮𝗳𝗲𝗿. My past and ongoing research interests include:
 
-I am a Computer Science Ph.D. candidate at `Purdue University`, advised by Prof. Elisa Bertino. My research addresses the challenge of concept drift in ML-based malware detection, developing domain adaptation methods, from semi-supervised to fully unsupervised, that maintain classifier accuracy as malware evolves, along with defenses that harden these adaptive detectors against adversarial evasion. I also investigate security risks of LLMs, particularly their misuse in malware generation. Previously, I interned at `Cisco Research` and `Aviatrix`, building ML systems for malware and network threat detection. My earlier work included designing secure authorization systems for smart homes.
+- Concept drift and domain adaptation for ML-based malware detection
+- Adversarial robustness of ML/DL-based security systems
+- Security risks of LLMs, including their misuse in malware generation
+- Access control and authorization for distributed and IoT systems
 
+I am currently a Sr. Staff Security Researcher at `Palo Alto Networks` on the Internet security research team. My earlier industry experience includes building ML systems for malware detection at `Cisco Research` and network threat detection at `Aviatrix`.
+
+Before joining Palo Alto Networks, I pursued my Ph.D. in the Department of Computer Science at `Purdue University`, advised by Prof. Elisa Bertino. My doctoral research addressed the challenge of concept drift in ML-based malware detection, developing domain adaptation methods, from semi-supervised to fully unsupervised, that maintain classifier accuracy as malware evolves, along with defenses that harden these adaptive detectors against adversarial evasion. I also investigated security risks of LLMs, particularly their misuse in malware generation.
 
 I obtained my MSc. in Computer Science from the `University of Calgary`, Canada, supervised by Prof. Reihaneh Safavi-Naini, and my Bachelor's degree from `Wuhan University`, China.
-
-**I’m on the job market for industry research, applied research, and engineering roles focused on applied AI and ML/LLMs for security.**
-
-
