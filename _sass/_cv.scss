@@ -145,18 +145,14 @@ div.cv-entry-subheader {
 
 span.cv-entry-title {
   font-style: italic;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 span.cv-entry-year {
+  flex: 0 0 auto;
   margin-left: auto;
-  background-color: #{$purple-color};
-  color: #{$white-color};
-  font-weight: 700;
-  text-transform: uppercase;
   white-space: nowrap;
-  border-radius: 0.2rem;
-  padding: 0.15rem 0.55rem;
-  font-size: 0.75rem;
 }
 
 div.cv-entry-department {
@@ -167,6 +163,12 @@ div.cv-entry-department {
 
 div.cv-entry-description {
   margin-top: 0.5rem;
+}
+
+ul.items {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 /*****************************
