@@ -9,7 +9,8 @@
   abstract     = {Concept drift and adversarial evasion are two major challenges for deploying machine learning-based malware detectors. While both have been studied separately, their combination, the adversarial robustness of drift-adaptive detectors, remains unexplored. We address this problem with AdvDA, a recent malware detector that uses adversarial domain adaptation to align a labeled source domain with a target domain with limited labels. The distribution shift between domains poses a unique challenge: robustness learned on the source may not transfer to the target, and existing defenses assume a fixed distribution. To address this, we propose a universal robustification framework that fine-tunes a pretrained AdvDA model on adversarially transformed inputs, agnostic to the attack type and choice of transformations. We instantiate it with five defense variants spanning two threat models: white-box PGD attacks in the feature space and black-box MalGuise attacks that modify malware binaries via functionality-preserving control-flow mutations. Across nine defense configurations, five monthly adaptation windows on Windows malware, and three false-positive-rate operating points, we find the undefended AdvDA completely vulnerable to PGD (100% attack success) and moderately to MalGuise (13%). Our framework reduces these rates to as low as 3.2% and 5.1%, respectively, but the optimal strategy differs: source adversarial training is essential for PGD defenses yet counterproductive for MalGuise defenses, where target-only training suffices. Furthermore, robustness does not transfer across these two threat models. We provide deployment recommendations that balance robustness, detection accuracy, and computational cost.},
   html         = {https://arxiv.org/abs/2604.06599},
   bibtex_show  = {true},
-  preview      = {mtcs.png}
+  preview      = {mtcs.png},
+  topics       = {malware-detection, concept-drift, adversarial-robustness}
 }
 
 
@@ -22,7 +23,8 @@
   abstract     = {Machine learning (ML)-based malware detectors degrade over time as concept drift introduces new and evolving families unseen during training. Retraining is limited by the cost and time of manual labeling or sandbox analysis. Existing approaches mitigate this via drift detection and selective labeling, but fully label-free adaptation remains largely unexplored. Recent self-training methods use a previously trained model to generate pseudo-labels for unlabeled data and then train a new model on these labels. The unlabeled data are used only for inference and do not participate in training the earlier model. We argue that these unlabeled samples still carry valuable information that can be leveraged when incorporated appropriately into training. This paper introduces LFreeDA, an end-to-end framework that adapts malware classifiers to drift without manual labeling or drift detection. LFreeDA first performs unsupervised domain adaptation on malware images, jointly training on labeled and unlabeled samples to infer pseudo-labels and prune noisy ones. It then adapts a classifier on CFG representations using the labeled and selected pseudo-labeled data, leveraging the scalability of images for pseudo-labeling and the richer semantics of CFGs for final adaptation. Evaluations on the real-world MB-24+ dataset show that LFreeDA improves accuracy by up to 12.6% and F1 by 11.1% over no-adaptation lower bounds, and is only 4% and 3.4% below fully supervised upper bounds in accuracy and F1, respectively. It also matches the performance of state-of-the-art methods provided with ground truth labels for 300 target samples. Additional results on two controlled-drift benchmarks further confirm that LFreeDA maintains malware detection performance as malware evolves without human labeling.},
   html         = {https://arxiv.org/abs/2511.14963},
   bibtex_show  = {true},
-  preview      = {LfreeDA.jpg}
+  preview      = {LfreeDA.jpg},
+  topics       = {malware-detection, concept-drift, domain-adaptation}
 }
 
 
@@ -41,6 +43,7 @@
   bibtex_show = {true},
   preview={Max.jpg},
   year      = {2025},
+  topics = {domain-adaptation}
 }
 
 
@@ -81,7 +84,8 @@
   video = {https://www.youtube.com/watch?v=32CnhtoSVKI&feature=youtu.be},
   code ={https://github.com/gloryer/malware-detection-concept-drift/tree/main?tab=readme-ov-file},
   bibtex_show = {true},
-  preview={malware_arch.jpg}
+  preview={malware_arch.jpg},
+  topics = {malware-detection, concept-drift}
 }
 
 
@@ -102,7 +106,8 @@
   code ={https://github.com/AJAkil/LLMalMorph},
   bibtex_show = {true},
   preview={framework_overview_version_2_page-0001.jpg},
-  year={2025}
+  year={2025},
+  topics={malware-detection, llm-security, adversarial-robustness}
 }
 
 
@@ -119,7 +124,8 @@
   year={2024},
   additional_info={*US Patent App. 18/129,540*},
   selected={true},
-  html ={https://patents.google.com/patent/US20240330656A1/en}
+  html ={https://patents.google.com/patent/US20240330656A1/en},
+  topics={domain-adaptation}
 }
 
 
@@ -134,7 +140,8 @@
   html ={https://arxiv.org/abs/2403.00935},
   pdf ={https://arxiv.org/pdf/2403.00935},
   bibtex_show = {true},
-  preview={Mind_Map.jpg}}
+  preview={Mind_Map.jpg},
+  topics={domain-adaptation, malware-detection}
 }
 
 @article{bhardwaj2024overcoming,
@@ -149,7 +156,8 @@
   html ={https://www.sciencedirect.com/science/article/pii/S0167404824000701},
   bibtex_show = {true},
   selected={true},
-  preview={cs.jpg}
+  preview={cs.jpg},
+  topics={malware-detection, domain-adaptation}
 }
 
 
@@ -166,7 +174,8 @@
   html ={https://ieeexplore.ieee.org/abstract/document/10143099},
   pdf ={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10143099},
   bibtex_show = {true},
-  preview={generative.jpg}
+  preview={generative.jpg},
+  topics={domain-adaptation}
 }
 
 @inproceedings{imtiaz2024adversarial,
@@ -179,7 +188,8 @@
   abstract = {Cutting state monitoring in the milling process is crucial for improving manufacturing efficiency and tool life. Cutting sound detection using machine learning (ML) models, inspired by experienced machinists, can be employed as a cost-effective and non-intrusive monitoring method in a complex manufacturing environment. However, labeling industry data for training is costly and time-consuming. Moreover, industry data is often scarce. In this study, we propose a novel adversarial domain adaptation (DA) approach to leverage abundant lab data to learn from scarce industry data, both labeled, for training a cutting-sound detection model. Rather than adapting the features from separate domains directly, we project them first into two separate latent spaces that jointly work as the feature space for learning domain-independent representations. We also analyze two different mechanisms for adversarial learning where the discriminator works as an adversary and a critic in separate settings, enabling our model to learn expressive domain-invariant and domainingrained features, respectively. We collected cutting sound data from multiple sensors in different locations, prepared datasets from lab and industry domain, and evaluated our learning models on them. Experiments showed that our models outperformed the multi-layer perceptron based vanilla domain adaptation models in labeling tasks on the curated datasets, achieving near 92 %, 82 % and 85% accuracy respectively for three different sensors installed in industry settings.},
   html ={https://ieeexplore.ieee.org/abstract/document/10774310},
   bibtex_show = {true},
-  preview={cutting.jpg}
+  preview={cutting.jpg},
+  topics={domain-adaptation, adversarial-robustness}
 }
 
 
@@ -195,7 +205,8 @@
 
 While many recent papers have proposed approaches for specific tasks, such as software security analysis and anomaly detection, these approaches differ in many aspects, such as with respect to the types of features in the model and the dataset used for training the models. In a way that no other available work does, this book provides readers with a comprehensive view of the complex area of ML for security, explains its challenges, and highlights areas for future research. This book is relevant to graduate students in computer science and engineering as well as information systems studies, and will also be useful to researchers and practitioners who work in the area of ML techniques for security tasks.},
   bibtex_show = {true},
-  preview={book.jpg}
+  preview={book.jpg},
+  topics={malware-detection}
 }
 
 
@@ -221,7 +232,8 @@ A common requirement of such systems is that the user uses tokens of multiple se
   pdf ={https://dl.acm.org/doi/pdf/10.1145/3532105.3535014},
   bibtex_show = {true},
   code ={https://github.com/gloryer/MERN_OAuthExtension},
-  preview={example.jpg}
+  preview={example.jpg},
+  topics={access-control}
 }
 
 
@@ -236,7 +248,8 @@ A common requirement of such systems is that the user uses tokens of multiple se
   html ={https://link.springer.com/chapter/10.1007/978-3-030-45371-8_9},
   pdf = {https://arxiv.org/pdf/1910.14169},
   bibtex_show = {true},
-  preview={crash.jpg}
+  preview={crash.jpg},
+  topics={access-control}
 }
 
 
@@ -254,5 +267,6 @@ A common requirement of such systems is that the user uses tokens of multiple se
   html ={https://dl.acm.org/doi/abs/10.1145/3229565.3229570},
   pdf ={https://dl.acm.org/doi/pdf/10.1145/3229565.3229570},
   bibtex_show = {true},
-  preview={reshub.jpg}
+  preview={reshub.jpg},
+  topics={access-control}
 }

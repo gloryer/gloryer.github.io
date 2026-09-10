@@ -4,6 +4,10 @@
 
 // Typography
 
+html {
+  font-size: 15px; // slightly smaller than the browser default (16px) to scale down all text sitewide
+}
+
 p,
 h1,
 h2,
@@ -540,7 +544,29 @@ footer.sticky-bottom {
   }
 }
 
+// Filter buttons used to filter blog posts / publications by topic in place (no page redirect)
+.filter-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: var(--global-theme-color);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
+
 .post-title {
+  font-size: 2rem;
+
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
@@ -568,6 +594,20 @@ footer.sticky-bottom {
       font-size: 0.875rem;
       padding-top: 0.25rem;
       padding-bottom: 0;
+
+      .filter-btn {
+        color: var(--global-text-color);
+
+        &:hover {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+
+        &.active {
+          color: var(--global-theme-color);
+          text-decoration: none;
+        }
+      }
     }
 
     a {

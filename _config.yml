@@ -132,8 +132,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: The Exploration Junction # blog_name will be displayed in your blog page
-blog_description: Here’s a collection of topics I’ve explored. While some may extend beyond my primary research areas, I still find them fascinating and worth sharing.
+blog_name: "" # blog_name will be displayed in your blog page
+blog_description: "" # blog_description will be displayed in your blog page
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -307,6 +307,22 @@ jekyll-archives:
 display_tags: ["networking", "malware-analysis", "reverse-engineering", "Cryptography-implementations","OAuth-2.0"] # these tags will be displayed on the front page of your blog
 display_categories: [] # these categories will be displayed on the front page of your blog
 
+# Topics used to filter the publications list in place (see _pages/publications.md).
+# `slug` must match a `topics` value (comma-separated) in the corresponding _bibliography/papers.bib entry.
+display_topics:
+  - slug: malware-detection
+    label: Malware Detection
+  - slug: concept-drift
+    label: Concept Drift
+  - slug: adversarial-robustness
+    label: Adversarial Robustness
+  - slug: domain-adaptation
+    label: Domain Adaptation
+  - slug: llm-security
+    label: LLM Security
+  - slug: access-control
+    label: Access Control & IoT Security
+
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
@@ -364,6 +380,7 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    topics,
     video,
     website,
   ]

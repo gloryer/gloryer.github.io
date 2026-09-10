@@ -15,7 +15,61 @@ nav_order: 2
 
 <div class="publications">
 
+{% if site.display_topics %}
+  <div class="tag-category-list">
+    <ul class="p-0 m-0">
+      <li>
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+      </li>
+      {% for topic in site.display_topics %}
+        <p>&bull;</p>
+        <li>
+          <button type="button" class="filter-btn" data-filter="{{ topic.slug }}">
+            <i class="fa-solid fa-tag fa-sm"></i> {{ topic.label }}
+          </button>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
+
 {% bibliography%}
 
 
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var filterBtns = document.querySelectorAll('.publications .filter-btn');
+    var groups = document.querySelectorAll('.publications ol.bibliography');
+    if (!filterBtns.length || !groups.length) return;
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+
+        filterBtns.forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute('data-filter') === filter);
+        });
+
+        groups.forEach(function (ol) {
+          var visibleCount = 0;
+
+          Array.prototype.forEach.call(ol.children, function (li) {
+            var row = li.querySelector('[data-topics]');
+            var topics = row ? row.getAttribute('data-topics').split(',').filter(Boolean) : [];
+            var match = filter === 'all' || topics.indexOf(filter) !== -1;
+            li.hidden = !match;
+            if (match) visibleCount++;
+          });
+
+          ol.hidden = visibleCount === 0;
+          var heading = ol.previousElementSibling;
+          if (heading && heading.classList.contains('bibliography')) {
+            heading.hidden = visibleCount === 0;
+          }
+        });
+      });
+    });
+  });
+</script>

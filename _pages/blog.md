@@ -5,7 +5,7 @@ title: blog
 nav: true
 nav_order: 1
 pagination:
-  enabled: true
+  enabled: false # disabled so the topic filter below can filter across every post on one page
   collection: posts
   permalink: /page/:num/
   per_page: 5
@@ -34,9 +34,17 @@ pagination:
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
+      <li>
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+      </li>
+      {% if site.display_tags.size > 0 or site.display_categories.size > 0 %}
+        <p>&bull;</p>
+      {% endif %}
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <button type="button" class="filter-btn" data-filter="tag-{{ tag | slugify }}">
+            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+          </button>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -47,7 +55,9 @@ pagination:
       {% endif %}
       {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <button type="button" class="filter-btn" data-filter="category-{{ category | slugify }}">
+            <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+          </button>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -121,7 +131,17 @@ pagination:
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
-    <li>
+    {% assign filter_keys = "" %}
+    {% for tag in post.tags %}
+      {% assign tag_slug = tag | slugify %}
+      {% assign filter_keys = filter_keys | append: "tag-" | append: tag_slug | append: " " %}
+    {% endfor %}
+    {% for category in post.categories %}
+      {% assign category_slug = category | slugify %}
+      {% assign filter_keys = filter_keys | append: "category-" | append: category_slug | append: " " %}
+    {% endfor %}
+
+    <li data-filter-tags="{{ filter_keys | strip }}">
 
 {% if post.thumbnail %}
 
@@ -154,8 +174,8 @@ pagination:
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+            <button type="button" class="filter-btn" data-filter="tag-{{ tag | slugify }}">
+              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</button>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -165,8 +185,8 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+            <button type="button" class="filter-btn" data-filter="category-{{ category | slugify }}">
+              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</button>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -194,3 +214,28 @@ pagination:
 {% endif %}
 
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var posts = document.querySelectorAll('.post-list > li');
+    if (!filterBtns.length || !posts.length) return;
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+
+        filterBtns.forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute('data-filter') === filter);
+        });
+
+        posts.forEach(function (post) {
+          var keys = (post.getAttribute('data-filter-tags') || '').split(' ').filter(Boolean);
+          post.hidden = !(filter === 'all' || keys.indexOf(filter) !== -1);
+        });
+
+        window.scrollTo({ top: document.querySelector('.tag-category-list').offsetTop - 100, behavior: 'smooth' });
+      });
+    });
+  });
+</script>

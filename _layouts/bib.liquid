@@ -1,6 +1,7 @@
 ---
 ---
-<div class="row">
+{% assign entry_topics = entry.topics | remove: " " | downcase %}
+<div class="row" {% if entry_topics %}data-topics="{{ entry_topics }}"{% endif %}>
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
