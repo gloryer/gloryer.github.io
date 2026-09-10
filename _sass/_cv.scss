@@ -138,8 +138,7 @@ div.cv-entry-institution {
 div.cv-entry-subheader {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   gap: 0.5rem;
   color: var(--global-text-color-light);
 }
@@ -149,9 +148,15 @@ span.cv-entry-title {
 }
 
 span.cv-entry-year {
+  margin-left: auto;
+  background-color: #{$purple-color};
+  color: #{$white-color};
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
+  border-radius: 0.2rem;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.75rem;
 }
 
 div.cv-entry-department {

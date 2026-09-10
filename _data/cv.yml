@@ -72,7 +72,7 @@
         - part of the Mitacs Globalink Research Internship program
 
 - title: Awards and Acknowledgements
-  type: time_table
+  type: experience_table
   contents:
     - year: 2025
       items:
@@ -122,10 +122,11 @@
 
 
 - title: Invited talks
-  type: time_table
+  type: experience_table
   contents:
     - title: "Domain Adaptation for Malware Classification Using Graph Neural Networks: Learning Semantic and Structural Features of Control Flow Graphs"
       institution: Cisco open mic talks
+      logo: cisco.svg
       year: 2023
       
 
