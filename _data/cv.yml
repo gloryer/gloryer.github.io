@@ -117,14 +117,17 @@
 
 
 - title: Organization
-  type: nested_list
+  type: experience_table
   contents:
-    - title: Conference
-      items:
-        - Local Arrangement Co-Chair for SecRETs2018 (Calgary, May 2018)
-    - title: Student Organization
-      items:
-        - Vice President for Computer Science Graduate Society, University of Calgary (2018 - 2019)
+    - title: Local Arrangement Co-Chair for SecRETs2018, Calgary
+      department: Conference
+      year: May 2018
+      description:
+
+    - title: Vice President, Computer Science Graduate Society, University of Calgary
+      department: Student Organization
+      year: 2018 - 2019
+      description:
 
 
 - title: Invited talks
