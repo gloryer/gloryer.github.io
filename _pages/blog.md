@@ -32,38 +32,23 @@ pagination:
 
 {% if site.display_tags or site.display_categories %}
 
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      <li>
-        <button type="button" class="filter-btn active" data-filter="all">All</button>
-      </li>
-      {% if site.display_tags.size > 0 or site.display_categories.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
+  <div class="filter-bar">
+    <div class="filter-bar-label">Filter by topic</div>
+    <div class="filter-pills">
+      <button type="button" class="filter-pill color-all active" data-filter="all">All</button>
       {% for tag in site.display_tags %}
-        <li>
-          <button type="button" class="filter-btn" data-filter="tag-{{ tag | slugify }}">
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
-          </button>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
+        {% assign color_index = forloop.index0 | modulo: 7 %}
+        <button type="button" class="filter-pill color-{{ color_index }}" data-filter="tag-{{ tag | slugify }}">
+          <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+        </button>
       {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
       {% for category in site.display_categories %}
-        <li>
-          <button type="button" class="filter-btn" data-filter="category-{{ category | slugify }}">
-            <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
-          </button>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
+        {% assign color_index = site.display_tags.size | plus: forloop.index0 | modulo: 7 %}
+        <button type="button" class="filter-pill color-{{ color_index }}" data-filter="category-{{ category | slugify }}">
+          <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
+        </button>
       {% endfor %}
-    </ul>
+    </div>
   </div>
   {% endif %}
 
@@ -217,7 +202,7 @@ pagination:
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var filterBtns = document.querySelectorAll('.filter-btn');
+    var filterBtns = document.querySelectorAll('.filter-btn, .filter-pill');
     var posts = document.querySelectorAll('.post-list > li');
     if (!filterBtns.length || !posts.length) return;
 
@@ -234,7 +219,8 @@ pagination:
           post.hidden = !(filter === 'all' || keys.indexOf(filter) !== -1);
         });
 
-        window.scrollTo({ top: document.querySelector('.tag-category-list').offsetTop - 100, behavior: 'smooth' });
+        var bar = document.querySelector('.filter-bar');
+        if (bar) window.scrollTo({ top: bar.offsetTop - 100, behavior: 'smooth' });
       });
     });
   });

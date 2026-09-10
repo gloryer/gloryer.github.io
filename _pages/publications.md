@@ -16,20 +16,17 @@ nav_order: 2
 <div class="publications">
 
 {% if site.display_topics %}
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      <li>
-        <button type="button" class="filter-btn active" data-filter="all">All</button>
-      </li>
+  <div class="filter-bar">
+    <div class="filter-bar-label">Filter by topic</div>
+    <div class="filter-pills">
+      <button type="button" class="filter-pill color-all active" data-filter="all">All</button>
       {% for topic in site.display_topics %}
-        <p>&bull;</p>
-        <li>
-          <button type="button" class="filter-btn" data-filter="{{ topic.slug }}">
-            <i class="fa-solid fa-tag fa-sm"></i> {{ topic.label }}
-          </button>
-        </li>
+        {% assign color_index = forloop.index0 | modulo: 7 %}
+        <button type="button" class="filter-pill color-{{ color_index }}" data-filter="{{ topic.slug }}">
+          {{ topic.label }}
+        </button>
       {% endfor %}
-    </ul>
+    </div>
   </div>
 {% endif %}
 
@@ -40,7 +37,7 @@ nav_order: 2
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var filterBtns = document.querySelectorAll('.publications .filter-btn');
+    var filterBtns = document.querySelectorAll('.publications .filter-pill');
     var groups = document.querySelectorAll('.publications ol.bibliography');
     if (!filterBtns.length || !groups.length) return;
 
