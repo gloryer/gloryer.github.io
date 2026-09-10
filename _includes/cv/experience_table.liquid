@@ -1,5 +1,9 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in entry.contents %}
+    {% assign year_on_first_item = false %}
+    {% if content.year and content.title == blank %}
+      {% assign year_on_first_item = true %}
+    {% endif %}
     <li class="list-group-item cv-entry">
       {% if content.institution %}
         <div class="cv-entry-logo">
@@ -15,12 +19,14 @@
         {% if content.institution %}
           <div class="cv-entry-institution">{{ content.institution }}</div>
         {% endif %}
-        {% if content.title or content.year %}
-          <div class="cv-entry-subheader{% unless content.title %} cv-entry-subheader-year-only{% endunless %}">
-            {% if content.title %}<span class="cv-entry-title">{{ content.title }}</span>{% endif %}
-            {% if content.year %}<span class="cv-entry-year">{{ content.year }}</span>{% endif %}
-          </div>
-        {% endif %}
+        {% unless year_on_first_item %}
+          {% if content.title or content.year %}
+            <div class="cv-entry-subheader">
+              {% if content.title %}<span class="cv-entry-title">{{ content.title }}</span>{% endif %}
+              {% if content.year %}<span class="cv-entry-year">{{ content.year }}</span>{% endif %}
+            </div>
+          {% endif %}
+        {% endunless %}
         {% if content.department %}
           <div class="cv-entry-department">
             <i class="fa-regular fa-circle-dot icondepartment"></i>
@@ -33,7 +39,7 @@
         {% if content.description %}
           <ul class="items">
             {% for item in content.description %}
-              <li>
+              <li{% if forloop.first and year_on_first_item %} class="cv-entry-item-with-year"{% endif %}>
                 {% if item.contents %}
                   <span class="item-title">{{ item.title }}</span>
                   <ul class="subitems">
@@ -46,6 +52,7 @@
                 {% else %}
                   <span class="item">{{ item }}</span>
                 {% endif %}
+                {% if forloop.first and year_on_first_item %}<span class="cv-entry-year">{{ content.year }}</span>{% endif %}
               </li>
             {% endfor %}
           </ul>
@@ -53,7 +60,7 @@
         {% if content.items %}
           <ul class="items">
             {% for item in content.items %}
-              <li>
+              <li{% if forloop.first and year_on_first_item %} class="cv-entry-item-with-year"{% endif %}>
                 {% if item.contents %}
                   <span class="item-title">{{ item.title }}</span>
                   <ul class="subitems">
@@ -66,6 +73,7 @@
                 {% else %}
                   <span class="item">{{ item }}</span>
                 {% endif %}
+                {% if forloop.first and year_on_first_item %}<span class="cv-entry-year">{{ content.year }}</span>{% endif %}
               </li>
             {% endfor %}
           </ul>

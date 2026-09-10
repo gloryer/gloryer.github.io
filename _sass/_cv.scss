@@ -143,12 +143,6 @@ div.cv-entry-subheader {
   color: var(--global-text-color-light);
 }
 
-// When there's no title next to it (e.g. Awards), push the time down a row
-// so it doesn't float right at the top of the entry.
-div.cv-entry-subheader-year-only {
-  margin-top: 1.5rem;
-}
-
 span.cv-entry-title {
   font-style: italic;
   flex: 1 1 auto;
@@ -176,6 +170,21 @@ ul.items {
   padding-left: 0;
   margin-left: 0;
   margin-top: 0;
+}
+
+// When a time label has no title (e.g. Awards), it's attached to the
+// first bullet item instead of a separate row, so it sits on the same
+// line/baseline as the text rather than floating above it.
+li.cv-entry-item-with-year {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+
+  span.item {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
 }
 
 /*****************************
