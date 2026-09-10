@@ -503,11 +503,15 @@ footer.sticky-bottom {
   transform: translateX(-15px) translateY(-5px);
 }
 
-// News
+// Section headings on the about page (news, latest posts, selected publications):
+// the divider sits right under the heading, not at the bottom of the section.
+.section-title {
+  border-bottom: 2px solid var(--global-text-color-light);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
 
 .news {
-  border-bottom: 2px solid var(--global-text-color-light);
-  padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
 
   .news-scroll-note {
@@ -521,8 +525,6 @@ footer.sticky-bottom {
 // Selected publications (about page)
 
 .selected-publications {
-  border-bottom: 2px solid var(--global-text-color-light);
-  padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
 }
 
