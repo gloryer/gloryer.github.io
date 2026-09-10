@@ -33,7 +33,6 @@
   title     = {Maximizing Information in Domain-Invariant Representation Improves Transfer Learning},
   booktitle = {2025 IEEE 11th International Conference on Collaboration and Internet Computing (CIC)},
   publisher = {IEEE},
-  selected={true},
   award={Best Paper Award},
   award_name={Best Paper Award},
   abstract = {We propose MaxDIRep, a domain adaptation method that improves the decomposition of data representations into domain‑independent and domain‑dependent components. Existing methods, such as Domain‑Separation Networks (DSN), use a weak orthogonality constraint between these components, which can lead to label‑relevant features being partially encoded in the domain‑dependent representation (DDRep) rather than the domain‑independent representation (DIRep). As a result, information crucial for target‑domain classification may be missing from the DIRep. MaxDIRep addresses this issue by applying a Kullback‑Leibler (KL) divergence constraint to minimize the information content of the DDRep, thereby encouraging the DIRep to retain features that are both domain‑invariant and predictive of target labels. Through geometric analysis and an ablation study on synthetic datasets, we show why DSN’s weaker constraint can lead to suboptimal adaptation. Experiments on standard image benchmarks and a network intrusion detection task demonstrate that MaxDIRep achieves strong performance, works with pretrained models, and generalizes to non‑image classification tasks.},
@@ -123,7 +122,6 @@
   author={Wegman, Mark and Tu, Yuhai and Dang, Xuan-Hong and Singla, Ankush and Li, Adrian Shuai},
   year={2024},
   additional_info={*US Patent App. 18/129,540*},
-  selected={true},
   html ={https://patents.google.com/patent/US20240330656A1/en},
   topics={domain-adaptation}
 }
@@ -155,7 +153,6 @@
   abstract = {Many current malware detection methods are based on supervised learning techniques, which however have certain limitations. First, these techniques require a large amount of labeled data for training which is often difficult to obtain. Second, they are not very effective when there are differences in domain distribution between new malware and known malware. To address these issues, we propose MD-ADA – a malware detection framework that leverages adversarial domain adaptation (DA). DA allows one to adapt a training malware dataset available at a domain, referred to as the source, for training a classifier in another domain, referred to as the target. DA, typically used when the target has limited training malware data available, maps the source and target datasets into a common latent space. As we use an image representation for malware binaries, MD-ADA uses a convolution neural network (CNN) providing a lossless image embedding for the source and target datasets. MD-ADA also employs a generative adversarial network (GAN) for malware classification that is suitable for scenarios with few target-labeled data where the distribution of the features is similar (homogeneous) or different (heterogeneous). We have carried out several experiments to assess the performance of MD-ADA. The experiments show that MD-ADA outperforms the fine-tuning approach with an accuracy of 99.29% on the BODMAS dataset, 89.3% for the Malevis dataset on homogeneous feature distribution, and 90.12% on the CICMalMem2022 dataset (Target) and 83.23% on the Microsoft Kaggle dataset (Target) for heterogeneous feature distribution. The observed F1-scores of 99.13% and 87.5% for homogeneous feature distributions and 91.27% and 81.7% for heterogeneous distributions indicate that the MD-ADA performance is satisfactory for both data distributions when the target has very few labeled data.},
   html ={https://www.sciencedirect.com/science/article/pii/S0167404824000701},
   bibtex_show = {true},
-  selected={true},
   preview={cs.jpg},
   topics={malware-detection, domain-adaptation}
 }
@@ -225,7 +222,6 @@ While many recent papers have proposed approaches for specific tasks, such as so
   year={2022},
   slides = {sacmat_slides.pdf},
   video = {https://dl.acm.org/doi/10.1145/3532105.3535014},
-  selected={true},
   abstract = {Controlled sharing is fundamental to distributed systems. We consider a capability-based distributed authorization system where a client receives capabilities (access tokens) from an authorization server to access the resources of resource servers. Capability-based authorization systems have been widely used on the Web, in mobile applications and other distributed systems.
 A common requirement of such systems is that the user uses tokens of multiple servers in a particular order. A related requirement is the token may be used if certain environmental conditions hold. We introduce a secure capability-based system that supports "permission sequence" and "context". This allows a finite sequence of permissions to be enforced, each with their own specific context. We prove the safety property of this system for these conditions and integrate the system into OAuth 2.0 with proof-of-possession tokens. We evaluate our implementation and compare it with plain OAuth with respect to the average time for obtaining an authorization token and acquiring access to the resource.},
   html ={https://dl.acm.org/doi/abs/10.1145/3532105.3535014},
@@ -262,7 +258,6 @@ A common requirement of such systems is that the user uses tokens of multiple se
   year={2018},
   award={Best Paper Award},
   award_name={Best Paper Award},
-  selected={true},
   abstract = {Today's Smart Home platforms such as Samsung SmartThings and Amazon AWS IoT are primarily cloud based: devices in the home sense the environment and send the collected data, directly or through a hub, to the cloud. Cloud runs various applications and analytics on the collected data, and generates commands according to the users' specifications that are sent to the actuators to control the environment. The role of the hub in this setup is effectively message passing between the devices and the cloud, while the required analytics, computation, and control are all performed by the cloud. We ask the following question: what if the cloud is not available? This can happen not only by accident or natural causes, but also due to targeted attacks. We discuss possible effects of such unavailability on the functionalities that are commonly available in smart homes, including security and safety related services as well as support for health and well-being of home users, and propose RES-Hub, a hub that can provide the required functionalities when the cloud is unavailable. During the normal functioning of the system, RES-Hub will receive regular status updates from cloud, and will use this information to continue to provide the user specified services when it detects the cloud is down. We describe an IoTivity-based software architecture that is used to implement RES-Hub in a flexible and expendable way and discuss our implementation.},
   html ={https://dl.acm.org/doi/abs/10.1145/3229565.3229570},
   pdf ={https://dl.acm.org/doi/pdf/10.1145/3229565.3229570},
