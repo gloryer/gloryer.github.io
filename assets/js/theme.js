@@ -29,6 +29,7 @@ let applyTheme = () => {
   setHighlight(theme);
   setGiscusTheme(theme);
   setSearchTheme(theme);
+  setParticlesTheme(theme);
 
   // if mermaid is not defined, do nothing
   if (typeof mermaid !== "undefined") {
@@ -196,6 +197,17 @@ let setSearchTheme = (theme) => {
   } else {
     ninjaKeys.classList.remove("dark");
   }
+};
+
+let setParticlesTheme = (theme) => {
+  // if particles.js is not loaded yet, do nothing
+  if (typeof pJSDom === "undefined" || !pJSDom.length) return;
+
+  const color = theme === "dark" ? "#ffffff" : "#000000";
+  const particles = pJSDom[0].pJS.particles;
+  particles.color.value = color;
+  particles.line_linked.color = color;
+  pJSDom[0].pJS.fn.particlesRefresh();
 };
 
 let transTheme = () => {

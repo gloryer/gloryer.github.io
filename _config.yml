@@ -46,9 +46,10 @@ rss_icon: false
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 bib_search: true
+enable_particles: true # animated particle-network background
 
 # Dimensions
 max_width: 930px
@@ -584,6 +585,12 @@ third_party_libraries:
     url:
       js: "https://cdn.jsdelivr.net/npm/mermaid@{{version}}/dist/mermaid.min.js"
     version: "10.7.0"
+  particlesjs:
+    integrity:
+      js: "sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+    url:
+      js: "https://cdnjs.cloudflare.com/ajax/libs/particles.js/{{version}}/particles.min.js"
+    version: "2.0.0"
   polyfill:
     url:
       js: "https://cdnjs.cloudflare.com/polyfill/v{{version}}/polyfill.min.js?features=es6"

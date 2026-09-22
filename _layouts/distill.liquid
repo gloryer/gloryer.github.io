@@ -65,6 +65,7 @@
   </d-front-matter>
 
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    {% if site.enable_particles %}<div id="particles-js"></div>{% endif %}
     <!-- Header -->
     {% include header.liquid %}
 
@@ -123,5 +124,6 @@
     {% include scripts/progressBar.liquid %}
     {% include scripts/back_to_top.liquid %}
     {% include scripts/search.liquid %}
+    {% include scripts/particles.liquid %}
   </body>
 </html>

@@ -1,0 +1,17 @@
+{% if site.enable_particles %}
+  <script
+    defer
+    src="{{ site.third_party_libraries.particlesjs.url.js }}"
+    integrity="{{ site.third_party_libraries.particlesjs.integrity.js }}"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'complete' && typeof particlesJS !== 'undefined' && !(window.pJSDom && window.pJSDom.length)) {
+        particlesJS.load('particles-js', '{{ "/assets/json/particles.json" | relative_url }}', function () {
+          setParticlesTheme(determineComputedTheme());
+        });
+      }
+    });
+  </script>
+{% endif %}

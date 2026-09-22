@@ -27,6 +27,25 @@ body.sticky-bottom-footer {
   padding-bottom: 0;
 }
 
+@keyframes particles-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  animation: particles-fadein 2s ease-in;
+}
+
 .container {
   max-width: $max-content-width;
 }
