@@ -1001,6 +1001,22 @@ code {
   padding: 3px 3px;
 }
 
+// Bio text on the about page: render inline `code` tags and links as a solid
+// gold pill with black text instead of the sitewide accent-colored text.
+.bio-content {
+  code,
+  a {
+    color: #{$black-color};
+    background-color: #{$boilermaker-gold-color};
+    border-radius: 3px;
+    padding: 3px 5px;
+  }
+
+  a:hover {
+    color: #{$black-color};
+  }
+}
+
 // Transitioning Themes
 html.transition,
 html.transition *,
