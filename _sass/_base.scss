@@ -668,6 +668,12 @@ footer.sticky-bottom {
   }
 }
 
+// Name heading on the about page: match the size of the news /
+// selected publications section headings (h2.section-title, 2rem).
+#name-title {
+  font-size: 2rem;
+}
+
 .post-list {
   margin: 0;
   margin-bottom: 40px;
