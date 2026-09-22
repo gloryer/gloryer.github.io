@@ -25,6 +25,7 @@ $pink-color-light: #ffdddd !default;
 $rose-color: #e11d48 !default;
 $yellow-color: #efcc00 !default;
 $boilermaker-gold-color: #cfb991 !default;
+$aged-gold-color: #8e6f3e !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%);
@@ -36,7 +37,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($boilermaker-gold-color, 0.05);
+$code-bg-color-light: rgba($aged-gold-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location
